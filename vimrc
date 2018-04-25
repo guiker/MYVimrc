@@ -159,9 +159,9 @@ set langmenu=zh_CN.UTF-8
 set helplang=cn
 " 设置编码格式
 set termencoding=utf-8
-set encoding=utf8
+set encoding=utf-8
 " 使用utf-8或gbk打开文件
-set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+set fileencodings=utf-8,ucs-bom,gbk,cp936,gb2312,gb18030
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 新建文件设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -194,8 +194,7 @@ func SetTitle()
         call setline(5,"# @File Name:".expand("%"))
         call setline(6,"# @Description:")
         call setline(7,"#")
-        call setline(8,"#===================================")
-        call setline(9,"")
+        call setline(8,"#===================================\n")
 endfunc
 autocmd BufNewFile * normal G
 
