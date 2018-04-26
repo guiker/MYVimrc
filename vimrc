@@ -33,7 +33,7 @@ syntax enable
 " 允许指定语法高亮配色方案替换默认方案
 syntax on
 "默认配色方案
-colorscheme darkblue
+colorscheme koehler
 " 开启256色支持，默认是8色
 set t_Co=256
 " 命令行显示输入的命令
@@ -279,8 +279,9 @@ let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
 let g:NERDTreeHighlightFolders = 1         " enables folder icon highlighting using exact match
 let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
-let g:NERDTreeDirArrowExpandable='♥'
-let g:NERDTreeDirArrowCollapsible='♥'
+"文件夹打开与关闭样式
+"let g:NERDTreeDirArrowExpandable='♥'
+"let g:NERDTreeDirArrowCollapsible='♥'
 " 关闭窗口时自动关闭NerdTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
